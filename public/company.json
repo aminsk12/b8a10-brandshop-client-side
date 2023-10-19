@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "title": "Toyota",
+      "img": "https://i.ibb.co/6BB72RP/banner1.jpg",
+      "short_description": "This is the first item's short description."
+    },
+    {
+      "id": 2,
+      "title": "Ford",
+      "img": "https://i.ibb.co/ZgVb5hh/banner2.jpg",
+      "short_description": "A brief description for the second item."
+    },
+    {
+      "id": 3,
+      "title": "BMW",
+      "img": "https://i.ibb.co/yPvKx1t/banner3.webp",
+      "short_description": "The third item comes with a concise description."
+    },
+    {
+      "id": 4,
+      "title": "Mercedes-Benz",
+      "img": "https://i.ibb.co/7KCWRq8/banner4.jpg",
+      "short_description": "Here's a short description for item number four."
+    },
+    {
+      "id": 5,
+      "title": "Tesla",
+      "img": "https://i.ibb.co/8BnnBMz/tesla-model-x-banner-by-laznovak-dg5dz1p-fullview.jpg",
+      "short_description": "A quick overview of the fifth item."
+    },
+    {
+      "id": 6,
+      "title": "Honda",
+      "img": "https://i.ibb.co/LnCNkDz/banner6.jpg",
+      "short_description": "The sixth item's brief description."
+    }
+  ]
+  
