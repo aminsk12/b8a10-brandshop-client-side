@@ -45,14 +45,7 @@ const Navber = () => {
                             >
                                 Home
                             </NavLink>
-                            <NavLink
-                                to="s"
-                                className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-green-500 underline" : ""
-                                }
-                            >
-                                About Us
-                            </NavLink>
+                           
              
                             <NavLink
                                 to="/addProduct"
@@ -72,7 +65,7 @@ const Navber = () => {
                             </NavLink>
                         </ul>
                     </div>
-                    <Link to="/"><img src={logo} className="sm:w-7  lg:w-24" alt="" /></Link>
+                    <Link to="/"><img src={logo} className="sm:w-7   lg:w-24" alt="" /></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-10 text-2xl font-bold">
@@ -84,14 +77,7 @@ const Navber = () => {
                         >
                             Home
                         </NavLink>
-                        <NavLink
-                            to="s"
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-green-500 underline" : ""
-                            }
-                        >
-                            About Us
-                        </NavLink>
+                        
                         
                         <NavLink
                             to="addProduct"

@@ -7,6 +7,9 @@ import Register from "./Component/Pages/Login/Register";
 import AddProduct from "./Component/Pages/AddProduct/AddProduct";
 import Service from "./Component/Pages/Service/Service";
 import Update from "./Component/Pages/Service/Update";
+import About from "./Component/Pages/About/About";
+import PrivateRoute from "./Component/Provider/PrivateRoute";
+import Details from "./Component/Pages/Service/Details";
 
 
 
@@ -24,8 +27,13 @@ const route = createBrowserRouter([
 
             },
             {
-                path: '/service/:brand',
-                element: <Service></Service>,
+                path: '/about',
+                element: <About></About>,
+
+            },
+            {
+                path: '/service/:type',
+                element: <PrivateRoute><Service></Service></PrivateRoute>,
                 loader: ()=> fetch('http://localhost:5000/item')
 
             },
@@ -39,12 +47,21 @@ const route = createBrowserRouter([
             },
             {
               path: '/addProduct',
-              element: <AddProduct></AddProduct>
+              element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
             },
+            
             {
               path: '/update/service/:id',
-              element: <Update></Update> ,
+              element: <PrivateRoute><Update></Update></PrivateRoute> ,
               loader: ({params})=> fetch(`http://localhost:5000/item/${params.id}`)
+            },
+
+
+
+           {
+              path: '/details/:id',
+              element: <PrivateRoute><Details></Details></PrivateRoute>,
+        
             }
 
         ]
